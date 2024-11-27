@@ -1,0 +1,13 @@
+[package]
+name = "proxy-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "1", features = ["full", "client", "http1"] }
+hyper-util = { version = "0.1", features = ["full"] }
+http-body-util = "0.1"
+anyhow = "1"
+hyper-rustls = "0.27"
+httparse = "1"
